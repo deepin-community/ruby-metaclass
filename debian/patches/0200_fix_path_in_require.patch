@@ -1,0 +1,19 @@
+Description: Fix path in the require statement of the tests.
+ The test/ directory is not in $LOAD_PATH.
+Author: Cédric Boutillier <cedric.boutillier@gmail.com>
+Last-Update: 2011-12-29
+--- a/test/object_methods_test.rb
++++ b/test/object_methods_test.rb
+@@ -1,4 +1,4 @@
+-require "test_helper"
++require "test/test_helper"
+ 
+ class ObjectMethodsTest < Test::Unit::TestCase
+ 
+@@ -28,4 +28,4 @@
+     assert instance.__metaclass__.is_a?(Class)
+   end
+ 
+-end
+\ No newline at end of file
++end

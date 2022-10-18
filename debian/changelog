@@ -1,0 +1,33 @@
+ruby-metaclass (0.0.4-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 01:23:33 +0100
+
+ruby-metaclass (0.0.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.0.4
+  * debian/control:
+    + remove obsolete DM-Upload-Allowed flag
+    + use canonical URI in Vcs-* fields
+    + bump Standards-Version to 3.9.5
+  * debian/copyright: use DEP5 copyright-format/1.0 URL for Format field
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 19 Feb 2014 22:06:37 +0100
+
+ruby-metaclass (0.0.1-2) unstable; urgency=low
+
+  * Bump build dependency on gem2deb to >= 0.3.0~
+
+ -- Cédric Boutillier <cedric.boutillier@gmail.com>  Tue, 26 Jun 2012 13:10:16 +0200
+
+ruby-metaclass (0.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #653599)
+  * 0100_remove_rubygems_bundler_stuff.patch: remove requirements on rubygems
+    and bundler
+  * 0200_fix_path_in_require.patch: fix path of test_helper in require
+    statement of tests.
+
+ -- Cédric Boutillier <cedric.boutillier@gmail.com>  Thu, 29 Dec 2011 14:48:35 +0100

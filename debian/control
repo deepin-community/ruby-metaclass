@@ -1,0 +1,20 @@
+Source: ruby-metaclass
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <cedric.boutillier@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-metaclass.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-metaclass.git;a=summary
+Homepage: http://github.com/floehopper/metaclass
+XS-Ruby-Versions: all
+
+Package: ruby-metaclass
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+Description: Ruby library adding a metaclass method to all Ruby objects
+ This simple Ruby library provides for every Ruby object a method called
+ "__metaclass__", returning a class attached the object, which offers
+ possibilities of metaprogramming, like adding specific methods to the object.
